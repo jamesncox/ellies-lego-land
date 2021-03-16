@@ -4,6 +4,7 @@ import groq from "groq";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import client from "../../client";
+import Image from "next/image";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -59,11 +60,27 @@ const Post = (props) => {
           </ul>
         )}
       </div>
-      <p className="mt-5 pb-10 text-left ml-5 text-blue-700">
-        <Link href="/">
-          <a className="text-xl font-bold">&#129044; BACK</a>
-        </Link>
-      </p>
+      <Link href="/">
+        <a className="text-xl font-bold">
+          <div className="flex mt-5 pb-24 text-left ml-5 text-blue-700">
+            <svg
+              className="w-7"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
+            </svg>{" "}
+            <p className="ml-2">BACK</p>
+          </div>
+        </a>
+      </Link>
     </Layout>
   );
 };
