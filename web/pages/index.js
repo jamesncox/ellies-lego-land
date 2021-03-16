@@ -14,7 +14,7 @@ const Index = (props) => {
   return (
     <Layout title="Ellie's Lego Land">
       <div className="flex justify-end mr-5">
-        <p className="text-blue-800 mx-5 font-bold md:text-xl">
+        <p className="text-blue-800 mx-5 font-bold md:text-2xl">
           Hi, I'm Ellie. Checkout my Lego creations!
         </p>
         <Image
