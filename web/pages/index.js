@@ -14,9 +14,9 @@ const Index = (props) => {
   return (
     <Layout title="Ellie's Lego Land">
       <div className="flex justify-end mr-5">
-        <p className="text-blue-800 mx-5 font-bold md:text-2xl">
+        <h1 className="text-blue-800 mx-5 font-bold md:text-2xl">
           Hi, I'm Ellie. Checkout my Lego creations!
-        </p>
+        </h1>
         <Image
           className="rounded-full"
           src="/images/ellie-avatar.png"
@@ -38,9 +38,9 @@ const Index = (props) => {
                   />
                 )}
                 <div>
-                  <h1 className="text-blue-700 underline font-bold tracking-tight">
+                  <h2 className="text-blue-700 md:text-xl font-bold tracking-tight">
                     {title}
-                  </h1>
+                  </h2>
                   <p className="text-blue-900">
                     {new Date(_updatedAt).toDateString()}
                   </p>
