@@ -19,7 +19,7 @@ const Index = (props) => {
         </p>
         <Image
           className="rounded-full"
-          src="/../public/images/ellie-avatar.png"
+          src="/images/ellie-avatar.png"
           alt="Ellie avatar"
           height={70}
           width={70}

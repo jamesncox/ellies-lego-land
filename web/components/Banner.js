@@ -6,7 +6,7 @@ export default function Banner() {
       <div className="flex justify-center p-10 space-x-4 md:space-x-10">
         <div className="transform rotate-6 my-6 -mb-6 mr-2">
           <Image
-            src="/../public/images/lego-head.png"
+            src="/images/lego-head.png"
             height={70}
             width={70}
             alt="lego head"
