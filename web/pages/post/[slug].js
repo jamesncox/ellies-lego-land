@@ -22,7 +22,7 @@ const Post = (props) => {
   return (
     <Layout title={title}>
       <div className="bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
-        <h1 className="mb-5 text-center text-blue-700 font-bold tracking-tight">
+        <h1 className="text-xl md:text-3xl mb-5 text-center text-blue-700 font-bold tracking-tight">
           {title}
         </h1>
         <div className="mb-5 -mt-10">
