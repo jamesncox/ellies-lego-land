@@ -61,7 +61,7 @@ const Post = (props) => {
       </div>
       <p className="mt-5 pb-10 text-left ml-5 text-blue-700">
         <Link href="/">
-          <a className="text-xl font-bold">🠔 BACK</a>
+          <a className="text-xl font-bold">&#129044; BACK</a>
         </Link>
       </p>
     </Layout>
