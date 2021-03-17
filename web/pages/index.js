@@ -12,7 +12,7 @@ function urlFor(source) {
 const Index = (props) => {
   const { posts = [] } = props;
   return (
-    <Layout title="Ellie's Lego Land">
+    <Layout title="Ellie's Lego Land" width="max-w-xl">
       <div className="flex justify-end mr-5">
         <h1 className="text-blue-800 mx-5 font-bold md:text-2xl">
           Hi, I'm Ellie. Checkout my Lego creations!
@@ -27,7 +27,9 @@ const Index = (props) => {
       </div>
       {posts.map(
         ({ _id, title = "", slug = "", _updatedAt = "", mainImage }) =>
-          slug && (
+          slug &&
+          (console.log(mainImage),
+          (
             <Link key={_id} href="/post/[slug]" as={`/post/${slug.current}`}>
               <a className="grid grid-cols-2 gap-4 bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
                 {mainImage && (
@@ -47,7 +49,7 @@ const Index = (props) => {
                 </div>
               </a>
             </Link>
-          )
+          ))
       )}
     </Layout>
   );
