@@ -25,16 +25,16 @@ const Post = (props) => {
         <h1 className="font-mono text-xl md:text-3xl mb-5 text-center text-blue-700 font-bold tracking-tight">
           {title.toUpperCase()}
         </h1>
-        <div className="mb-5 -mt-10">
+        <div className="md:block mb-5 -mt-2 md:-mt-5">
           {authorImage && (
             <div>
               <img
-                className="rounded-full bg-white w-16"
+                className="rounded-full bg-white w-12 md:w-16"
                 src={urlFor(authorImage).url()}
               />
             </div>
           )}
-          <span className="ml-1 font-bold text-blue-700">By {name}</span>
+          <span className="md:ml-1 font-bold text-blue-700">By {name}</span>
         </div>
         {mainImage && (
           <img
