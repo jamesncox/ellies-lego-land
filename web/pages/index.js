@@ -18,11 +18,11 @@ const Index = (props) => {
           Hi, I'm Ellie. Checkout my Lego creations!
         </h1>
         <Image
-          className="rounded-full"
-          src="/images/ellie-avatar.png"
+          className="rounded-full bg-white"
+          src="/images/girl-avatar.png"
           alt="Ellie avatar"
-          height={70}
-          width={70}
+          height={80}
+          width={80}
         />
       </div>
       {posts.map(

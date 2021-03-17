@@ -29,12 +29,12 @@ const Post = (props) => {
           {authorImage && (
             <div>
               <img
-                className="rounded-full"
-                src={urlFor(authorImage).width(50).url()}
+                className="rounded-full bg-white"
+                src={urlFor(authorImage).width(60).url()}
               />
             </div>
           )}
-          <span className="mr-5 text-blue-900">By {name}</span>
+          <span className="ml-1 font-bold text-blue-700">By {name}</span>
         </div>
         {mainImage && (
           <img
