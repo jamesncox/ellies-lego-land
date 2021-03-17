@@ -4,6 +4,7 @@ import groq from "groq";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import client from "../../client";
+import Image from "next/image";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -28,8 +29,8 @@ const Post = (props) => {
           {authorImage && (
             <div>
               <img
-                className="rounded-full bg-white"
-                src={urlFor(authorImage).width(60).url()}
+                className="rounded-full bg-white w-16"
+                src={urlFor(authorImage).url()}
               />
             </div>
           )}
@@ -38,7 +39,7 @@ const Post = (props) => {
         {mainImage && (
           <img
             className="rounded-md w-full"
-            src={urlFor(mainImage).width(500).url()}
+            src={urlFor(mainImage).url()}
             alt={title}
           />
         )}
