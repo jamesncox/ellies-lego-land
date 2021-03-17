@@ -38,10 +38,10 @@ const Index = (props) => {
                   />
                 )}
                 <div>
-                  <h2 className="text-blue-700 md:text-xl font-bold tracking-tight">
+                  <h2 className="font-mono text-blue-700 md:text-xl font-bold tracking-tight">
                     {title}
                   </h2>
-                  <p className="text-blue-900">
+                  <p className="text-blue-900 font-mono">
                     {new Date(_updatedAt).toDateString()}
                   </p>
                 </div>

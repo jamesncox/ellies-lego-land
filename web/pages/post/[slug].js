@@ -21,8 +21,8 @@ const Post = (props) => {
   return (
     <Layout title={title}>
       <div className="bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
-        <h1 className="text-xl md:text-3xl mb-5 text-center text-blue-700 font-bold tracking-tight">
-          {title}
+        <h1 className="font-mono text-xl md:text-3xl mb-5 text-center text-blue-700 font-bold tracking-tight">
+          {title.toUpperCase()}
         </h1>
         <div className="mb-5 -mt-10">
           {authorImage && (
@@ -42,7 +42,7 @@ const Post = (props) => {
             alt={title}
           />
         )}
-        <div className="mt-5 text-blue-900">
+        <div className="mt-5 text-blue-900 text-justify">
           <BlockContent
             blocks={body}
             imageOptions={{ w: 320, h: 240, fit: "max" }}
