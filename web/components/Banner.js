@@ -17,7 +17,7 @@ export default function Banner() {
           <a>
             <h2 className="font-extrabold tracking-tight text-red-600 text-2xl -mb-6 md:-mb-2 md:text-4xl transform -skew-y-2">
               <span className="block animate-pulse">Ellie's Lego Land</span>
-              <span className="block text-yellow-400 font-bold ">
+              <span className="block font-mono text-yellow-400 font-bold ">
                 Custom and Standard Builds
               </span>
             </h2>
