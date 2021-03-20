@@ -28,17 +28,10 @@ const Index = (props) => {
       </div>
       {posts.map(
         ({ _id, title = "", slug = "", _updatedAt = "", mainImage }) =>
-          slug &&
-          (console.log(slug),
-          (
+          slug && (
             <Link key={_id} href="/post/[slug]" as={`/post/${slug.current}`}>
               <a className="grid grid-cols-2 gap-4 bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
                 {mainImage && (
-                  // <img
-                  //   className="w-48 rounded-md"
-                  //   src={urlFor(mainImage).url()}
-                  //   alt={title}
-                  // />
                   <ImageLoad
                     className="w-48 rounded-md"
                     src={urlFor(mainImage).url()}
@@ -56,7 +49,7 @@ const Index = (props) => {
                 </div>
               </a>
             </Link>
-          ))
+          )
       )}
     </Layout>
   );
