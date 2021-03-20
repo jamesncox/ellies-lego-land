@@ -36,7 +36,7 @@ const Index = (props) => {
                     className="w-48 rounded-md"
                     src={urlFor(mainImage).url()}
                     alt={title}
-                    placeholder={`/images/${slug + "tiny"}`}
+                    placeholder={`/images/${slug.current + "-tiny.jpg"}`}
                   />
                 )}
                 <div>

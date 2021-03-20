@@ -5,6 +5,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import client from "../../client";
 import Image from "next/image";
+import ImageLoad from "../../hooks/ImageLoad";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -18,7 +19,9 @@ const Post = (props) => {
     authorImage,
     body = [],
     mainImage,
+    slug,
   } = props;
+  console.log(slug.current);
   return (
     <Layout title={title} width="max-w-3xl">
       <div className="bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
@@ -37,10 +40,16 @@ const Post = (props) => {
           <span className="md:ml-1 font-bold text-blue-700">By {name}</span>
         </div>
         {mainImage && (
-          <img
+          // <img
+          //   className="rounded-md w-full"
+          //   src={urlFor(mainImage).url()}
+          //   alt={title}
+          // />
+          <ImageLoad
             className="rounded-md w-full"
             src={urlFor(mainImage).url()}
             alt={title}
+            placeholder={`/images/${slug.current + "-tiny.jpg"}`}
           />
         )}
         <div className="mt-5 text-blue-900 text-justify">
@@ -91,7 +100,8 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
   "categories": categories[]->title,
   "authorImage": author->image,
   body,
-  mainImage
+  mainImage,
+  slug
 }`;
 
 Post.getInitialProps = async function (context) {
