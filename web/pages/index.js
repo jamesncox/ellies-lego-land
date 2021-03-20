@@ -4,6 +4,7 @@ import groq from "groq";
 import client from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import Image from "next/image";
+import ImageLoad from "../hooks/ImageLoad";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -28,15 +29,21 @@ const Index = (props) => {
       {posts.map(
         ({ _id, title = "", slug = "", _updatedAt = "", mainImage }) =>
           slug &&
-          (console.log(mainImage),
+          (console.log(slug),
           (
             <Link key={_id} href="/post/[slug]" as={`/post/${slug.current}`}>
               <a className="grid grid-cols-2 gap-4 bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
                 {mainImage && (
-                  <img
+                  // <img
+                  //   className="w-48 rounded-md"
+                  //   src={urlFor(mainImage).url()}
+                  //   alt={title}
+                  // />
+                  <ImageLoad
                     className="w-48 rounded-md"
                     src={urlFor(mainImage).url()}
                     alt={title}
+                    placeholder={`/images/${slug + "tiny"}`}
                   />
                 )}
                 <div>
