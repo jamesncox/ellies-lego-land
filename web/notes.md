@@ -4,4 +4,6 @@
 
 [] Filter posts by Custom, Standard or All
 
+[] Add more tiny images.
+
 # Completed To Dos
