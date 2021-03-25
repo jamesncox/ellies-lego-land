@@ -27,7 +27,7 @@ export default function Layout({ title, width, children }) {
         <meta
           prefix="og: http://ogp.me/ns#"
           property="og:image"
-          content="https://i.ibb.co/Z6y9vs6/ellies-lego-land-og.jpg"
+          content="https://i.ibb.co/5vBKCNR/ellie-lego-og.jpg"
         />
 
         <meta
@@ -55,7 +55,7 @@ export default function Layout({ title, width, children }) {
 
         <meta
           name="twitter:image"
-          content="https://i.ibb.co/Z6y9vs6/ellies-lego-land-og.jpg"
+          content="https://i.ibb.co/5vBKCNR/ellie-lego-og.jpg"
         />
 
         <title>{title}</title>
