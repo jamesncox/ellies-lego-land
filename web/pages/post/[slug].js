@@ -40,11 +40,6 @@ const Post = (props) => {
           <span className="md:ml-1 font-bold text-blue-700">By {name}</span>
         </div>
         {mainImage && (
-          // <img
-          //   className="rounded-md w-full"
-          //   src={urlFor(mainImage).url()}
-          //   alt={title}
-          // />
           <ImageLoad
             className="rounded-md w-full"
             src={urlFor(mainImage).url()}
