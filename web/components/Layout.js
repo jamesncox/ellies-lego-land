@@ -35,6 +35,27 @@ export default function Layout({ title, width, children }) {
           content="https://ellies-lego-land.vercel.app/"
         />
 
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta name="twitter:site" content="@MemRook" />
+
+        <meta
+          name="twitter:domain"
+          content="https://ellies-lego-land.vercel.app/"
+        />
+
+        <meta name="twitter:title" content="Ellie's Lego Land" />
+
+        <meta
+          name="twitter:description"
+          content="My daughter's very own blog to showcase her Lego builds. Created with Next.js, Sanity.io and Tailwind CSS."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://i.ibb.co/Z6y9vs6/ellies-lego-land-og.jpg"
+        />
+
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
