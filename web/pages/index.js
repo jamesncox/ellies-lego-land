@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import Link from "next/link";
@@ -13,8 +14,25 @@ function urlFor(source) {
 
 const Index = (props) => {
   const { posts = [] } = props;
+  const [showPosts, setShowPosts] = useState(posts);
 
-  console.log(posts.filter((post) => post.categories[0] === "Standard Build"));
+  const showAllBuilds = () => {
+    setShowPosts(posts);
+  };
+
+  const showCustomBuilds = () => {
+    const customBuilds = posts.filter(
+      (post) => post.categories[0] === "Custom Build"
+    );
+    setShowPosts(customBuilds);
+  };
+
+  const showStandardBuilds = () => {
+    const standardBuilds = posts.filter(
+      (post) => post.categories[0] === "Standard Build"
+    );
+    setShowPosts(standardBuilds);
+  };
 
   return (
     <Layout title="Ellie's Lego Land" width="max-w-xl">
@@ -30,7 +48,29 @@ const Index = (props) => {
           width={80}
         />
       </div>
-      {posts.map(
+
+      <nav className="flex justify-between m-5">
+        <button
+          className="text-red-700 font-bold outline-none"
+          onClick={showAllBuilds}
+        >
+          #All
+        </button>
+        <button
+          className="text-red-700 font-bold outline-none"
+          onClick={showCustomBuilds}
+        >
+          #Custom
+        </button>
+        <button
+          className="text-red-700 font-bold outline-none"
+          onClick={showStandardBuilds}
+        >
+          #Standard
+        </button>
+      </nav>
+
+      {showPosts.map(
         ({ _id, title = "", slug = "", _updatedAt = "", mainImage }) =>
           slug && (
             <Link key={_id} href="/post/[slug]" as={`/post/${slug.current}`}>
