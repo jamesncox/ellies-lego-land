@@ -15,9 +15,15 @@ function urlFor(source) {
 const Index = (props) => {
   const { posts = [] } = props;
   const [showPosts, setShowPosts] = useState(posts);
+  const [allUnderline, setAllUnderline] = useState("border-b-2 border-red-700");
+  const [customUnderline, setCustomUnderline] = useState("");
+  const [standardUnderline, setStandardUnderline] = useState("");
 
   const showAllBuilds = () => {
     setShowPosts(posts);
+    setAllUnderline("border-b-2 border-red-700");
+    setCustomUnderline("");
+    setStandardUnderline("");
   };
 
   const showCustomBuilds = () => {
@@ -25,6 +31,9 @@ const Index = (props) => {
       (post) => post.categories[0] === "Custom Build"
     );
     setShowPosts(customBuilds);
+    setAllUnderline("");
+    setCustomUnderline("border-b-2 border-red-700");
+    setStandardUnderline("");
   };
 
   const showStandardBuilds = () => {
@@ -32,6 +41,9 @@ const Index = (props) => {
       (post) => post.categories[0] === "Standard Build"
     );
     setShowPosts(standardBuilds);
+    setAllUnderline("");
+    setCustomUnderline("");
+    setStandardUnderline("border-b-2 border-red-700");
   };
 
   return (
@@ -51,22 +63,22 @@ const Index = (props) => {
 
       <nav className="flex justify-between m-5">
         <button
-          className="text-red-700 font-bold outline-none"
+          className={`text-red-700 font-bold focus:outline-none ${allUnderline}`}
           onClick={showAllBuilds}
         >
-          #All
+          All
         </button>
         <button
-          className="text-red-700 font-bold outline-none"
+          className={`text-red-700 font-bold focus:outline-none ${customUnderline}`}
           onClick={showCustomBuilds}
         >
-          #Custom
+          Custom
         </button>
         <button
-          className="text-red-700 font-bold outline-none"
+          className={`text-red-700 font-bold focus:outline-none ${standardUnderline}`}
           onClick={showStandardBuilds}
         >
-          #Standard
+          Standard
         </button>
       </nav>
 
