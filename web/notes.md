@@ -6,6 +6,7 @@
 
 [] Add more tiny images.
 
-[] There is an issue with the bottom margin on index.js
+[x] There is an issue with the bottom margin on index.js
+[x] Fixed by adding a Footer and link to my portfolio.
 
 # Completed To Dos
