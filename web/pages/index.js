@@ -13,7 +13,8 @@ function urlFor(source) {
 
 const Index = (props) => {
   const { posts = [] } = props;
-  console.log(props);
+
+  console.log(posts.filter((post) => post.categories[0] === "Standard Build"));
 
   return (
     <Layout title="Ellie's Lego Land" width="max-w-xl">
@@ -61,7 +62,14 @@ const Index = (props) => {
 
 Index.getInitialProps = async () => ({
   posts: await client.fetch(groq`
-    *[_type == "post" && publishedAt < now()]|order(publishedAt desc)
+    *[_type == "post" && publishedAt < now()]|order(publishedAt desc){
+      _id,
+      _updatedAt,
+      title,
+      "categories": categories[]->title,
+      mainImage,
+      slug
+    }
   `),
 });
 
