@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Footer from "../components/Footer";
 import Link from "next/link";
 import groq from "groq";
 import client from "../client";
@@ -51,6 +52,7 @@ const Index = (props) => {
             </Link>
           )
       )}
+      <Footer />
     </Layout>
   );
 };
