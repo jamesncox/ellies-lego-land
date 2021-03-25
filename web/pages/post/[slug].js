@@ -21,7 +21,7 @@ const Post = (props) => {
     mainImage,
     slug,
   } = props;
-  console.log(slug.current);
+
   return (
     <Layout title={title} width="max-w-3xl">
       <div className="bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
