@@ -5,6 +5,7 @@ export default function Layout({ title, width, children }) {
   return (
     <div className="bg-blue-400">
       <Head>
+        {/* LinkedIn card */}
         <meta
           prefix="og: http://ogp.me/ns#"
           property="og:type"
@@ -35,6 +36,7 @@ export default function Layout({ title, width, children }) {
           content="https://ellies-lego-land.vercel.app/"
         />
 
+        {/* Twitter card */}
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta name="twitter:site" content="@MemRook" />
