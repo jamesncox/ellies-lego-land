@@ -13,6 +13,8 @@ function urlFor(source) {
 
 const Index = (props) => {
   const { posts = [] } = props;
+  console.log(props);
+
   return (
     <Layout title="Ellie's Lego Land" width="max-w-xl">
       <div className="flex justify-end mr-5">
