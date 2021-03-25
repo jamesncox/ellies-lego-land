@@ -6,4 +6,6 @@
 
 [] Add more tiny images.
 
+[] There is an issue with the bottom margin on index.js
+
 # Completed To Dos
