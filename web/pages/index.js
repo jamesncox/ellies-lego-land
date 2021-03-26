@@ -63,19 +63,19 @@ const Index = (props) => {
 
       <nav className="flex justify-around m-5 mt-10 bg-blue-200 p-2 pb-2 rounded-md">
         <button
-          className={`text-red-600 font-bold focus:outline-none ${allUnderline}`}
+          className={`text-red-600 font-bold focus:outline-none text-sm md:text-base ${allUnderline}`}
           onClick={showAllBuilds}
         >
           ALL
         </button>
         <button
-          className={`text-red-600 font-bold focus:outline-none ${customUnderline}`}
+          className={`text-red-600 font-bold focus:outline-none text-sm md:text-base ${customUnderline}`}
           onClick={showCustomBuilds}
         >
           CUSTOM
         </button>
         <button
-          className={`text-red-600 font-bold focus:outline-none ${standardUnderline}`}
+          className={`text-red-600 font-bold focus:outline-none text-sm md:text-base ${standardUnderline}`}
           onClick={showStandardBuilds}
         >
           STANDARD
