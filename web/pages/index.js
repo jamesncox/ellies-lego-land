@@ -86,7 +86,7 @@ const Index = (props) => {
         ({ _id, title = "", slug = "", _updatedAt = "", mainImage }) =>
           slug && (
             <Link key={_id} href="/post/[slug]" as={`/post/${slug.current}`}>
-              <a className="grid grid-cols-2 gap-4 bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
+              <a className="grid grid-cols-2 gap-4 bg-blue-200 border border-blue-500 p-5 mx-5 my-2 rounded-xl">
                 {mainImage && (
                   <ImageLoad
                     className="w-48 rounded-md"
@@ -107,6 +107,7 @@ const Index = (props) => {
             </Link>
           )
       )}
+      <br />
       <Footer />
     </Layout>
   );

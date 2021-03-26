@@ -66,8 +66,8 @@ const Post = (props) => {
         )}
       </div>
       <Link href="/">
-        <a className="text-xl font-bold">
-          <div className="flex items-center mt-5 text-left ml-5 text-blue-700">
+        <a className="text-xl font-bold mb-16">
+          <div className="flex items-center text-left ml-5 text-blue-700">
             <svg
               className="w-7"
               xmlns="http://www.w3.org/2000/svg"
