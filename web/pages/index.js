@@ -50,7 +50,7 @@ const Index = (props) => {
     <Layout title="Ellie's Lego Land" width="max-w-xl">
       <div className="flex justify-end mr-5">
         <h1 className="text-blue-800 mx-5 font-bold md:text-2xl">
-          Hi, I'm Ellie. Checkout my Lego creations!
+          Hi, I'm Ellie. I ❤️ Legos!
         </h1>
         <Image
           className="rounded-full bg-white"
