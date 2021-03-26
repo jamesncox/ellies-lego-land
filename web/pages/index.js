@@ -61,7 +61,7 @@ const Index = (props) => {
         />
       </div>
 
-      <nav className="flex justify-between m-5 mt-10 bg-blue-200 py-2 px-5 rounded-md">
+      <nav className="flex justify-between m-5 mt-10 bg-blue-200 py-2 px-5 rounded-lg">
         <button
           className={`text-red-500 font-bold focus:outline-none text-sm md:text-base ${allUnderline}`}
           onClick={showAllBuilds}
