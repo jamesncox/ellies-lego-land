@@ -15,13 +15,13 @@ function urlFor(source) {
 const Index = (props) => {
   const { posts = [] } = props;
   const [showPosts, setShowPosts] = useState(posts);
-  const [allUnderline, setAllUnderline] = useState("border-b-2 border-red-700");
+  const [allUnderline, setAllUnderline] = useState("border-b-2 border-red-600");
   const [customUnderline, setCustomUnderline] = useState("");
   const [standardUnderline, setStandardUnderline] = useState("");
 
   const showAllBuilds = () => {
     setShowPosts(posts);
-    setAllUnderline("border-b-2 border-red-700");
+    setAllUnderline("border-b-2 border-red-600");
     setCustomUnderline("");
     setStandardUnderline("");
   };
@@ -32,7 +32,7 @@ const Index = (props) => {
     );
     setShowPosts(customBuilds);
     setAllUnderline("");
-    setCustomUnderline("border-b-2 border-red-700");
+    setCustomUnderline("border-b-2 border-red-600");
     setStandardUnderline("");
   };
 
@@ -43,7 +43,7 @@ const Index = (props) => {
     setShowPosts(standardBuilds);
     setAllUnderline("");
     setCustomUnderline("");
-    setStandardUnderline("border-b-2 border-red-700");
+    setStandardUnderline("border-b-2 border-red-600");
   };
 
   return (
@@ -61,24 +61,24 @@ const Index = (props) => {
         />
       </div>
 
-      <nav className="flex justify-between m-5">
+      <nav className="flex justify-around m-5 mt-10 bg-blue-200 p-2 pb-2 rounded-md">
         <button
-          className={`text-red-700 font-bold focus:outline-none ${allUnderline}`}
+          className={`text-red-600 font-bold focus:outline-none ${allUnderline}`}
           onClick={showAllBuilds}
         >
-          All
+          ALL
         </button>
         <button
-          className={`text-red-700 font-bold focus:outline-none ${customUnderline}`}
+          className={`text-red-600 font-bold focus:outline-none ${customUnderline}`}
           onClick={showCustomBuilds}
         >
-          Custom
+          CUSTOM
         </button>
         <button
-          className={`text-red-700 font-bold focus:outline-none ${standardUnderline}`}
+          className={`text-red-600 font-bold focus:outline-none ${standardUnderline}`}
           onClick={showStandardBuilds}
         >
-          Standard
+          STANDARD
         </button>
       </nav>
 
