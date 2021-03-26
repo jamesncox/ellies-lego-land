@@ -15,13 +15,13 @@ function urlFor(source) {
 const Index = (props) => {
   const { posts = [] } = props;
   const [showPosts, setShowPosts] = useState(posts);
-  const [allUnderline, setAllUnderline] = useState("border-b-2 border-red-600");
+  const [allUnderline, setAllUnderline] = useState("border-b-2 border-red-500");
   const [customUnderline, setCustomUnderline] = useState("");
   const [standardUnderline, setStandardUnderline] = useState("");
 
   const showAllBuilds = () => {
     setShowPosts(posts);
-    setAllUnderline("border-b-2 border-red-600");
+    setAllUnderline("border-b-2 border-red-500");
     setCustomUnderline("");
     setStandardUnderline("");
   };
@@ -32,7 +32,7 @@ const Index = (props) => {
     );
     setShowPosts(customBuilds);
     setAllUnderline("");
-    setCustomUnderline("border-b-2 border-red-600");
+    setCustomUnderline("border-b-2 border-red-500");
     setStandardUnderline("");
   };
 
@@ -43,7 +43,7 @@ const Index = (props) => {
     setShowPosts(standardBuilds);
     setAllUnderline("");
     setCustomUnderline("");
-    setStandardUnderline("border-b-2 border-red-600");
+    setStandardUnderline("border-b-2 border-red-500");
   };
 
   return (
@@ -63,19 +63,19 @@ const Index = (props) => {
 
       <nav className="flex justify-between m-5 mt-10 bg-blue-200 py-2 px-5 rounded-md">
         <button
-          className={`text-red-600 font-bold focus:outline-none text-sm md:text-base ${allUnderline}`}
+          className={`text-red-500 font-bold focus:outline-none text-sm md:text-base ${allUnderline}`}
           onClick={showAllBuilds}
         >
           ALL
         </button>
         <button
-          className={`text-red-600 font-bold focus:outline-none text-sm md:text-base ${customUnderline}`}
+          className={`text-red-500 font-bold focus:outline-none text-sm md:text-base ${customUnderline}`}
           onClick={showCustomBuilds}
         >
           CUSTOM
         </button>
         <button
-          className={`text-red-600 font-bold focus:outline-none text-sm md:text-base ${standardUnderline}`}
+          className={`text-red-500 font-bold focus:outline-none text-sm md:text-base ${standardUnderline}`}
           onClick={showStandardBuilds}
         >
           STANDARD
