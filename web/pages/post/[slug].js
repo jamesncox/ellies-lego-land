@@ -25,7 +25,7 @@ const Post = (props) => {
 
   return (
     <Layout title={title} width="max-w-3xl">
-      <div className="bg-blue-200 border border-blue-500 p-5 m-5 rounded-xl">
+      <div className="bg-blue-200 border border-blue-500 p-5 m-5 rounded-md">
         <h1 className="font-mono text-xl md:text-3xl mb-5 text-center text-blue-700 font-bold tracking-tight">
           {title.toUpperCase()}
         </h1>
