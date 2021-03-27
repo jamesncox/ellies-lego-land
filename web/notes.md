@@ -6,6 +6,9 @@
 
 [] Make footer stay at bottom regardless of content.
 
+[x] Create custom 404 page.
+[] Add link back to home
+
 # Completed To Dos
 
 [x] There is an issue with the bottom margin on index.js
