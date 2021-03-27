@@ -61,7 +61,7 @@ const Index = (props) => {
         />
       </div>
 
-      <nav className="flex justify-between m-5 mt-10 bg-blue-200 py-2 px-5 rounded-lg">
+      <nav className="flex justify-between m-5 mt-10 bg-blue-200 py-2 px-5 rounded-md">
         <button
           className={`text-red-500 font-bold focus:outline-none text-sm md:text-base ${allUnderline}`}
           onClick={showAllBuilds}
@@ -86,7 +86,7 @@ const Index = (props) => {
         ({ _id, title = "", slug = "", _updatedAt = "", mainImage }) =>
           slug && (
             <Link key={_id} href="/post/[slug]" as={`/post/${slug.current}`}>
-              <a className="grid grid-cols-2 gap-4 bg-blue-200 border border-blue-500 p-5 mx-5 my-2 rounded-xl">
+              <a className="grid grid-cols-2 gap-4 bg-blue-200 border border-blue-500 p-5 mx-5 my-2 rounded-md">
                 {mainImage && (
                   <ImageLoad
                     className="w-48 rounded-md"
