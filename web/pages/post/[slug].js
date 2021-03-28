@@ -48,7 +48,7 @@ const Post = (props) => {
             placeholder={`/images/${slug.current + "-tiny.jpg"}`}
           />
         )}
-        <div className="mt-5 text-blue-900 text-justify">
+        <div className="mt-5 text-blue-900">
           <BlockContent
             blocks={body}
             imageOptions={{ w: 320, h: 240, fit: "max" }}
