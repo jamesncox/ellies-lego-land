@@ -23,3 +23,8 @@ Bringing you all of my daughter's coolest Lego creations in her very own blog bu
 4. Run 'yarn install'
 5. Run 'yarn start'
 6. Enjoy!
+
+## Lessons Learned
+
+- This is my first project integrating a Headless CMS into a React/Next.js project. I have worked with REST APIs in the past, but fetch calls with Sanity are significantly different than typical REST calls (i.e. 'GET', 'PUT', 'PATCH', 'DELETE'). Sanity.io requires specific database queries with the fetch.
+- Next.js supports pre-rendering, "Instead of having the browser render everything from scratch, Next.js can serve pre-rendered HTML in two different ways," server-side rendering or static site generation. Depending on how you need data retrieved and then displayed, you can tell any Next.js page which one to use. I learned how to diffentiate between the two, when to use them, and how to define the fetch calls depending on which type of page is being rendered.
