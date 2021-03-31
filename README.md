@@ -1,6 +1,6 @@
 # Ellie's Lego Land
 
-Bringing you all of my daughter's coolest Lego creations with her very own blog built with Next.js, Tailwind and Sanity.io headless CMS to easily manage and display her Lego builds.
+Bringing you all of my daughter's coolest Lego creations in her very own blog built with Next.js, Tailwind and Sanity.io headless CMS to easily manage and display her Lego builds.
 
 **Live Site:** [Ellie's Lego Land](https://ellies-lego-land.vercel.app/)
 
