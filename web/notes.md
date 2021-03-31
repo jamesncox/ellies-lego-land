@@ -3,8 +3,6 @@
 [] Block Content (the actual content of each blog post) isn't formatting correctly.
 [] Have to customize! Follow Amy's examples...
 
-[] Update README.md
-
 # Completed To Dos
 
 [x] There is an issue with the bottom margin on index.js
@@ -16,3 +14,5 @@
 
 [x] Create custom 404 page.
 [x] Add link back to home
+
+[x] Update README.md
