@@ -6,7 +6,7 @@ Bringing you all of my daughter's coolest Lego creations in her very own blog bu
 
 ![lego-land](https://user-images.githubusercontent.com/47455758/113209489-beb09700-9238-11eb-8a54-d0d66b38bf9c.jpg)
 
-## How it's made
+## How It's Made
 
 - Next.js with dynamic page routing, slug generation and use of both static site generation and server side rendering
 - React with useState and useEffect to handle custom image lazy loading and conditional styles
@@ -15,3 +15,11 @@ Bringing you all of my daughter's coolest Lego creations in her very own blog bu
 - Navigation that filters by custom or standard build types
 - Responsive design with custom media queries to handle multiple screen sizes
 - Portable Text converted to block content to render blog markup
+
+## Run Locally
+
+1. In command line run 'git clone git@github.com:jamesncox/ellies-lego-land.git'
+2. CD into 'ellies-lego-land/web'
+4. Run 'yarn install'
+5. Run 'yarn start'
+6. Enjoy!
