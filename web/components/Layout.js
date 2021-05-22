@@ -59,7 +59,7 @@ export default function Layout({ title, width, children }) {
         />
 
         <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico?v=2" />
       </Head>
       <main
         className={`container mx-auto ${width} pt-8 min-h-screen flex flex-col`}
